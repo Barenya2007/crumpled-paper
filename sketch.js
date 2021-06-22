@@ -18,9 +18,9 @@ function setup() {
 
 	ground = new Ground(410,350,1200,20);
 
-	bin= new Dustbin(820,335,130,10);
-	bin2= new Dustbin(760,285,10,90);
-	bin3= new Dustbin(880,285,10,90);
+	bin= new Dustbin(580,335,130,10);
+	bin2= new Dustbin(520,285,10,90);
+	bin3= new Dustbin(640,285,10,90);
 
 	paper= new Paper(200,335,15);
 
@@ -47,7 +47,7 @@ function draw() {
 
 function keyPressed(){
 	if (keyCode===UP_ARROW){
-        Matter.Body.applyForce(paper.body, paper.body.position,{x:12,y:-10085});
+        Matter.Body.applyForce(paper.body, paper.body.position,{x:12,y:-85});
 	}
 	
 }
